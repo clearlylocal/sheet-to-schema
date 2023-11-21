@@ -1,0 +1,530 @@
+{
+	"results": {
+		"main": [
+			{
+				"no": 991,
+				"writer": "john.doe@example.com",
+				"category": "Apparel & Accessories",
+				"keyword": "matching family swimsuits",
+				"url": "https://www.example.com/matching-family-swimsuits",
+				"locale": "en-US",
+				"wordCountTarget": 400,
+				"due": "2023-11-17T12:00:01.345"
+			},
+			{
+				"no": 0,
+				"writer": "jane.smith@example.com",
+				"category": "Mother, Kids & Toys",
+				"keyword": "maternity photoshoot dresses",
+				"url": "https://www.example.com/maternity-photoshoot-dresses",
+				"locale": "en-US",
+				"wordCountTarget": 400,
+				"due": "2023-11-18T12:00:00"
+			},
+			{
+				"no": 993,
+				"writer": "michael.johnson@example.com",
+				"category": "Furniture & Furnishings",
+				"keyword": "mirrored closet doors",
+				"url": "https://www.example.com/mirrored-closet-doors",
+				"locale": "en-US",
+				"wordCountTarget": 400,
+				"due": "2023-11-19T12:00:00"
+			},
+			{
+				"no": 994,
+				"writer": "emily.brown@example.com",
+				"category": "Apparel & Accessories",
+				"keyword": "",
+				"url": "https://www.example.com/mens-long-sleeve-t-shirts",
+				"locale": "en-US",
+				"wordCountTarget": 400,
+				"due": null
+			},
+			{
+				"no": 995,
+				"writer": "william.davis@example.com",
+				"category": "Furniture",
+				"keyword": "",
+				"url": "https://www.example.com/queen-trundle-bed",
+				"locale": "en-US",
+				"wordCountTarget": 400,
+				"due": "2023-11-21T12:00:00"
+			},
+			{
+				"no": 996,
+				"writer": "olivia.miller@example.com",
+				"category": "Apparel & Accessories",
+				"keyword": "red pants for women",
+				"url": "https://www.example.com/red-pants-for-women",
+				"locale": "en-US",
+				"wordCountTarget": 400,
+				"due": "2023-11-22T12:00:00"
+			},
+			{
+				"no": 997,
+				"writer": "james.wilson@example.com",
+				"category": "Food & Beverage",
+				"keyword": "water crackers",
+				"url": "https://www.example.com/water-crackers",
+				"locale": "en-US",
+				"wordCountTarget": 400,
+				"due": "2023-11-23T12:00:00"
+			},
+			{
+				"no": 998,
+				"writer": "ava.anderson@example.com",
+				"category": "Shoes & Accessories",
+				"keyword": "womens white sandals",
+				"url": "https://www.example.com/womens-white-sandals",
+				"locale": "en-US",
+				"wordCountTarget": 400,
+				"due": "2023-11-24T12:00:00"
+			},
+			{
+				"no": 999,
+				"writer": "benjamin.taylor@example.com",
+				"category": "Construction & Real Estate",
+				"keyword": "wall mounted toilet",
+				"url": "https://www.example.com/wall-mounted-toilet",
+				"locale": null,
+				"wordCountTarget": 400,
+				"due": "2023-11-25T12:00:00"
+			},
+			{
+				"no": 1000,
+				"writer": "sophia.martinez@example.com",
+				"category": "Apparel & Accessories",
+				"keyword": "1",
+				"url": "https://www.example.com/chambray-dress",
+				"locale": null,
+				"wordCountTarget": 400,
+				"due": "2023-11-26T12:00:00"
+			},
+			{
+				"no": 1001,
+				"writer": "daniel.anderson@example.com",
+				"category": "Construction & Real Estate",
+				"keyword": "2",
+				"url": "https://www.example.com/lavender-wallpaper",
+				"locale": "es-MX",
+				"wordCountTarget": 400,
+				"due": "2023-11-27T12:00:00"
+			},
+			{
+				"no": 1002,
+				"writer": "mia.thomas@example.com",
+				"category": "Furniture",
+				"keyword": "3",
+				"url": "https://www.example.com/twin-day-bed",
+				"locale": "es-MX",
+				"wordCountTarget": 400,
+				"due": "2023-11-28T12:00:00"
+			},
+			{
+				"no": 1003,
+				"writer": "joseph.jackson@example.com",
+				"category": "Jewelry, Eyewear, Watches & Accessories",
+				"keyword": "mens silver bracelet",
+				"url": "https://www.example.com/mens-silver-bracelet",
+				"locale": "es-MX",
+				"wordCountTarget": 400,
+				"due": "2023-11-29T12:00:00"
+			},
+			{
+				"no": 1004,
+				"writer": "charlotte.white@example.com",
+				"category": "Apparel & Accessories",
+				"keyword": "plus size prom dress",
+				"url": "https://www.example.com/plus-size-prom-dress",
+				"locale": "es-MX",
+				"wordCountTarget": 400,
+				"due": "2023-11-30T12:00:00"
+			},
+			{
+				"no": 1005,
+				"writer": "david.harris@example.com",
+				"category": "Mother, Kids & Toys",
+				"keyword": "elf on the shelf doll",
+				"url": "https://www.example.com/elf-on-the-shelf-doll",
+				"locale": "es-MX",
+				"wordCountTarget": 400,
+				"due": "2023-12-01T12:00:00"
+			},
+			{
+				"no": 1006,
+				"writer": "abigail.clark@example.com",
+				"category": "Apparel & Accessories",
+				"keyword": "bomber jacket women",
+				"url": "https://www.example.com/bomber-jacket-women",
+				"locale": "es-MX",
+				"wordCountTarget": 400,
+				"due": "2023-12-02T12:00:00"
+			},
+			{
+				"no": 1007,
+				"writer": "alexander.lewis@example.com",
+				"category": "Shoes & Accessories",
+				"keyword": "black cowgirl boots",
+				"url": "https://www.example.com/black-cowgirl-boots",
+				"locale": "es-MX",
+				"wordCountTarget": 400,
+				"due": "2023-12-03T12:00:00"
+			},
+			{
+				"no": 1008,
+				"writer": "harper.young@example.com",
+				"category": "Mother, Kids & Toys",
+				"keyword": "boys dress shoes",
+				"url": "https://www.example.com/boys-dress-shoes",
+				"locale": "es-MX",
+				"wordCountTarget": 400,
+				"due": "2023-12-04T12:00:00"
+			},
+			{
+				"no": 1009,
+				"writer": "samuel.walker@example.com",
+				"category": "Apparel & Accessories",
+				"keyword": "long sleeve crop top",
+				"url": "https://www.example.com/long-sleeve-crop-top",
+				"locale": "es-MX",
+				"wordCountTarget": 400,
+				"due": null
+			},
+			{
+				"no": 1010,
+				"writer": "elizabeth.hall@example.com",
+				"category": "Apparel & Accessories",
+				"keyword": "toboggan hat",
+				"url": null,
+				"locale": "es-MX",
+				"wordCountTarget": 400,
+				"due": "1999-03-01T09:59:59.995"
+			},
+			{
+				"no": 1011,
+				"writer": "henry.allen@example.com",
+				"category": "Home & Garden",
+				"keyword": "valentines cards",
+				"url": null,
+				"locale": "es-MX",
+				"wordCountTarget": 400,
+				"due": "1999-03-02T10:00:00"
+			},
+			{
+				"no": 1012,
+				"writer": "amelia.green@example.com",
+				"category": "Home Appliances",
+				"keyword": "rechargeable heater",
+				"url": null,
+				"locale": "es-MX",
+				"wordCountTarget": 400,
+				"due": "1999-03-03T09:59:59.995"
+			},
+			{
+				"no": 1013,
+				"writer": "andrew.baker@example.com",
+				"category": "Home Appliances",
+				"keyword": "glass door mini fridge",
+				"url": null,
+				"locale": "es-MX",
+				"wordCountTarget": 400,
+				"due": "1999-03-04T09:59:59.995"
+			},
+			{
+				"no": 1014,
+				"writer": "sofia.king@example.com",
+				"category": "Mother, Kids & Toys",
+				"keyword": "bowser plush",
+				"url": "https://www.example.com/bowser-plush",
+				"locale": "es-MX",
+				"wordCountTarget": 400,
+				"due": "1999-03-05T09:59:59.995"
+			},
+			{
+				"no": 1015,
+				"writer": "matthew.wright@example.com",
+				"category": "Electrical Equipment & Supplies",
+				"keyword": "iphone aux cord",
+				"url": "https://www.example.com/iphone-aux-cord",
+				"locale": "es-MX",
+				"wordCountTarget": 400,
+				"due": "1999-03-06T09:59:59.995"
+			},
+			{
+				"no": 1016,
+				"writer": "scarlett.hill@example.com",
+				"category": "Home & Garden",
+				"keyword": "ceramic planter pots",
+				"url": "https://www.example.com/ceramic-planter-pots",
+				"locale": "zh-CN",
+				"wordCountTarget": 400,
+				"due": "1999-03-07T09:59:59.995"
+			},
+			{
+				"no": 1017,
+				"writer": "victoria.adams@example.com",
+				"category": "Home & Garden",
+				"keyword": "chair cushions with ties",
+				"url": "https://www.example.com/chair-cushions-with-ties",
+				"locale": "zh-CN",
+				"wordCountTarget": 400,
+				"due": "1999-03-08T09:59:59.995"
+			},
+			{
+				"no": 1018,
+				"writer": "aiden.nelson@example.com",
+				"category": "Mother, Kids & Toys",
+				"keyword": "double stroller jogger",
+				"url": "https://www.example.com/double-stroller-jogger",
+				"locale": "zh-CN",
+				"wordCountTarget": 800,
+				"due": "1999-03-09T09:59:59.995"
+			},
+			{
+				"no": 1019,
+				"writer": "chloe.morris@example.com",
+				"category": "Construction & Real Estate",
+				"keyword": "accordion closet doors",
+				"url": "https://www.example.com/accordion-closet-doors",
+				"locale": "zh-CN",
+				"wordCountTarget": 800,
+				"due": "1999-03-10T09:59:59.995"
+			},
+			{
+				"no": 1020,
+				"writer": null,
+				"category": "Jewelry, Eyewear, Watches & Accessories",
+				"keyword": "african hat",
+				"url": "https://www.example.com/african-hat",
+				"locale": "zh-CN",
+				"wordCountTarget": 800,
+				"due": "1999-03-11T09:59:59.995"
+			},
+			{
+				"no": 1019,
+				"writer": "lily.cook@example.com",
+				"category": "Construction & Real Estate",
+				"keyword": "accordion closet doors",
+				"url": "https://www.example.com/accordion-closet-doors",
+				"locale": "zh-CN",
+				"wordCountTarget": 400,
+				"due": "1999-03-11T09:59:59.995"
+			}
+		],
+		"other": [
+			{
+				"firstName": "John",
+				"lastName": "Doe",
+				"dob": "1985-01-15T00:00:00"
+			},
+			{
+				"firstName": "Jane",
+				"lastName": "Smith",
+				"dob": "1992-05-22T00:00:00"
+			},
+			{
+				"firstName": "Michael",
+				"lastName": "Johnson",
+				"dob": "1978-11-10T00:00:00"
+			},
+			{
+				"firstName": "Emily",
+				"lastName": "Brown",
+				"dob": "1989-07-03T00:00:00"
+			},
+			{
+				"firstName": "William",
+				"lastName": "Davis",
+				"dob": "1995-03-28T00:00:00"
+			},
+			{
+				"firstName": "Olivia",
+				"lastName": "Miller",
+				"dob": "1982-09-17T00:00:00"
+			},
+			{
+				"firstName": "James",
+				"lastName": "Wilson",
+				"dob": "1990-12-05T00:00:00"
+			},
+			{
+				"firstName": "Ava",
+				"lastName": "Anderson",
+				"dob": "1976-06-12T00:00:00"
+			},
+			{
+				"firstName": "Benjamin",
+				"lastName": "Taylor",
+				"dob": "1998-02-19T00:00:00"
+			},
+			{
+				"firstName": "Sophia",
+				"lastName": "Martinez",
+				"dob": "1987-08-24T00:00:00"
+			},
+			{
+				"firstName": "Daniel",
+				"lastName": "Anderson",
+				"dob": "1991-04-07T00:00:00"
+			},
+			{
+				"firstName": "Mia",
+				"lastName": "Thomas",
+				"dob": "1984-10-31T00:00:00"
+			},
+			{
+				"firstName": "Joseph",
+				"lastName": "Jackson",
+				"dob": "1993-06-08T00:00:00"
+			},
+			{
+				"firstName": "Charlotte",
+				"lastName": "White",
+				"dob": "1979-01-25T00:00:00"
+			},
+			{
+				"firstName": "David",
+				"lastName": "Harris",
+				"dob": "1996-07-14T00:00:00"
+			},
+			{
+				"firstName": "Abigail",
+				"lastName": "Clark",
+				"dob": "1983-03-09T00:00:00"
+			},
+			{
+				"firstName": "Alexander",
+				"lastName": "Lewis",
+				"dob": "1997-09-02T00:00:00"
+			},
+			{
+				"firstName": "Harper",
+				"lastName": "Young",
+				"dob": "1980-05-18T00:00:00"
+			},
+			{
+				"firstName": "Samuel",
+				"lastName": "Walker",
+				"dob": "1994-11-23T00:00:00"
+			},
+			{
+				"firstName": "Elizabeth",
+				"lastName": "Hall",
+				"dob": "1988-07-06T00:00:00"
+			},
+			{
+				"firstName": "Henry",
+				"lastName": "Allen",
+				"dob": "1999-02-11T00:00:00"
+			},
+			{
+				"firstName": "Amelia",
+				"lastName": "Green",
+				"dob": "1977-08-06T00:00:00"
+			},
+			{
+				"firstName": "Andrew",
+				"lastName": "Baker",
+				"dob": "1992-04-29T00:00:00"
+			},
+			{
+				"firstName": "Sofia",
+				"lastName": "King",
+				"dob": "1985-10-13T00:00:00"
+			},
+			{
+				"firstName": "Matthew",
+				"lastName": "Wright",
+				"dob": "1990-06-19T00:00:00"
+			},
+			{
+				"firstName": "Scarlett",
+				"lastName": "Hill",
+				"dob": "1975-12-02T00:00:00"
+			},
+			{
+				"firstName": "Victoria",
+				"lastName": "Adams",
+				"dob": "1993-07-27T00:00:00"
+			},
+			{
+				"firstName": "Aiden",
+				"lastName": "Nelson",
+				"dob": "1981-03-22T00:00:00"
+			},
+			{
+				"firstName": "Chloe",
+				"lastName": "Morris",
+				"dob": "1996-09-15T00:00:00"
+			},
+			{
+				"firstName": "Jameson",
+				"lastName": "Rogers",
+				"dob": "1989-05-09T00:00:00"
+			},
+			{
+				"firstName": "Lily",
+				"lastName": "Cook",
+				"dob": "1984-01-04T00:00:00"
+			}
+		]
+	},
+	"warnings": [
+		{
+			"reference": "'example'!O6",
+			"code": "cell_defaulted_due_to_error",
+			"message": "Cannot convert undefined to a PlainDateTime: expected number"
+		},
+		{
+			"reference": "'example'!M11",
+			"code": "cell_defaulted_due_to_error",
+			"message": "First argument to Intl.Locale constructor can't be empty or missing"
+		},
+		{
+			"reference": "'example'!M12",
+			"code": "cell_defaulted_due_to_error",
+			"message": "First argument to Intl.Locale constructor can't be empty or missing"
+		},
+		{
+			"reference": "'example'!N15",
+			"code": "CUSTOM_CODE",
+			"message": "Expected 400 or 800. Got 500"
+		},
+		{
+			"reference": "'example'!O21",
+			"code": "cell_defaulted_due_to_error",
+			"message": "Cannot convert \"invalid date\" to a PlainDateTime: expected number"
+		},
+		{
+			"reference": "'example'!G22",
+			"code": "cell_defaulted_due_to_error",
+			"message": "Invalid URL: 'undefined'"
+		},
+		{
+			"reference": "'example'!G23",
+			"code": "cell_defaulted_due_to_error",
+			"message": "Invalid URL: 'undefined'"
+		},
+		{
+			"reference": "'example'!G24",
+			"code": "cell_defaulted_due_to_error",
+			"message": "Invalid URL: 'undefined'"
+		},
+		{
+			"reference": "'example'!G25",
+			"code": "cell_defaulted_due_to_error",
+			"message": "Invalid URL: 'undefined'"
+		},
+		{
+			"reference": "'example'!B32",
+			"code": "cell_defaulted_due_to_error",
+			"message": "Expected \"not a real email address\" to be an email address"
+		},
+		{
+			"reference": "'example'!33:33",
+			"code": "row_excluded_due_to_blanks",
+			"message": "Row 33 is blank and was excluded from results"
+		}
+	]
+}

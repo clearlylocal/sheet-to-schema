@@ -1,0 +1,20 @@
+{
+	"deno.enable": true,
+	"deno.cacheOnSave": true,
+	"deno.unstable": true,
+	"deno.lint": true,
+	"editor.defaultFormatter": "denoland.vscode-deno",
+
+	"deno.codeLens.test": true,
+	"deno.documentPreloadLimit": 2000,
+	"editor.formatOnSave": false,
+	"[typescript]": {
+		"editor.defaultFormatter": "denoland.vscode-deno"
+	},
+	"[javascript]": {
+		"editor.defaultFormatter": "denoland.vscode-deno"
+	},
+	"[markdown]": {
+		"editor.defaultFormatter": "denoland.vscode-deno"
+	}
+}

@@ -1,0 +1,17 @@
+{
+	"lock": false,
+	"tasks": {
+		"test": "deno test -A --watch tests"
+	},
+	"imports": {},
+	"fmt": {
+		"semiColons": false,
+		"useTabs": true,
+		"lineWidth": 120,
+		"indentWidth": 4,
+		"singleQuote": true,
+		"proseWrap": "preserve",
+		"exclude": ["*.md"]
+	},
+	"lint": { "rules": { "tags": ["recommended"] } }
+}
