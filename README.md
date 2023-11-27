@@ -6,7 +6,7 @@ Convert an XLSX spreadsheet into a TypeScript-aware object using a schema:
 import { sheetToSchema } from 'sheet-to-schema/mod.ts'
 import { xlsxDateTime } from 'sheet-to-schema/dates.ts'
 
-const output = sheetToSchema(await Deno.readFile('/path/to/file.xlsx'), {
+const getData = sheetToSchema({
     sheets: {
         main: {
             match: /sheet.?1/i,
@@ -28,6 +28,8 @@ const output = sheetToSchema(await Deno.readFile('/path/to/file.xlsx'), {
         },
     },
 })
+
+const output = getData(await Deno.readFile('/path/to/file.xlsx'))
 
 // for illustration purposes - types are automatically inferred based on schema
 type Data = {

@@ -1,9 +1,16 @@
 import * as XLSX from 'https://raw.githubusercontent.com/clearlylocal/xlsx/9910080/xlsx.mjs'
 import { quoteSheetName, toExcelCol } from './references.ts'
-import type { CellValue } from './types.ts'
-
-type Matcher = string | RegExp | ((name: string, idx: number, arr: string[]) => boolean)
-type Row = CellValue[]
+import type {
+	CellValue,
+	Converter,
+	GenericSheetsConfig,
+	GenericWorkBookConfig,
+	Options,
+	Output,
+	Row,
+	Warning,
+} from './types.ts'
+export type { CellValue, GenericSheetsConfig, GenericWorkBookConfig }
 
 function isBlank(val: CellValue) {
 	return val == null || val === '' || val === 0
@@ -20,71 +27,9 @@ function sheetTo2dArray(sheet: XLSX.Sheet) {
 	return rows.slice(0, maxRow + 1)
 }
 
-type Options = {
-	handleBlankRow: 'throw' | 'excludeRow' | 'truncate'
-	handleUncaughtCellError: 'throw' | 'excludeRow'
-}
-
-type GenericWorkBookConfig<T extends GenericSheetsConfig> = {
-	options?: Partial<Options>
-	sheets: T
-}
-
 const defaultOptions: Options = {
 	handleBlankRow: 'throw',
 	handleUncaughtCellError: 'throw',
-}
-
-type Converter<T> = (value: CellValue, meta: { reference: string; warnings: Warning[] }) => T
-
-type SchemaItem<T, E, B> = {
-	match?: Matcher
-	ifError?: E
-	ifBlank?: B
-	convert: Converter<T>
-}
-
-type GenericSheetsConfig = Record<
-	string,
-	{
-		match?: Matcher
-		headerRow?: {
-			minIndex: number
-			maxIndex: number
-		}
-		schema: Record<string, SchemaItem<unknown, unknown, unknown>>
-	}
->
-
-type Warning = {
-	reference?: string
-	message: string
-	code?:
-		| 'row_excluded_due_to_blanks'
-		| 'rows_truncated_due_to_blanks'
-		| 'row_excluded_due_to_cell_error'
-		| 'cell_defaulted_due_to_error'
-		| (string & { readonly customCode?: unique symbol })
-}
-
-type Output<T extends GenericSheetsConfig> = {
-	results: {
-		[SheetKey in keyof T]: {
-			[SchemaKey in keyof T[SheetKey]['schema']]:
-				| ReturnType<T[SheetKey]['schema'][SchemaKey]['convert']>
-				| (
-					T[SheetKey]['schema'][SchemaKey] extends { ifError: unknown }
-						? T[SheetKey]['schema'][SchemaKey]['ifError']
-						: never
-				)
-				| (
-					T[SheetKey]['schema'][SchemaKey] extends { ifBlank: unknown }
-						? T[SheetKey]['schema'][SchemaKey]['ifBlank']
-						: never
-				)
-		}[]
-	}
-	warnings: Warning[]
 }
 
 const MIN_HEADER_ROW_INDEX = 0
@@ -248,13 +193,32 @@ function getWorkbookData<T extends GenericSheetsConfig>(
 	return { results: results as Expand<Output<T>['results']>, warnings }
 }
 
+export function sheetToSchema<T extends GenericSheetsConfig>(config: GenericWorkBookConfig<T>): (
+	xlsxBin: Uint8Array | ArrayBuffer,
+) => Expand<Output<T>>
 export function sheetToSchema<T extends GenericSheetsConfig>(
 	xlsxBin: Uint8Array | ArrayBuffer,
 	config: GenericWorkBookConfig<T>,
-) {
-	const wb = XLSX.read(xlsxBin)
-
-	return getWorkbookData(wb, config)
+): Expand<Output<T>>
+// deno-lint-ignore no-explicit-any
+export function sheetToSchema(...args: any[]) {
+	switch (args.length) {
+		case 1: {
+			const [config] = args
+			return (xlsxBin: Uint8Array | ArrayBuffer) => {
+				const wb = XLSX.read(xlsxBin)
+				return getWorkbookData(wb, config)
+			}
+		}
+		case 2: {
+			const [xlsxBin, config] = args
+			const wb = XLSX.read(xlsxBin)
+			return getWorkbookData(wb, config)
+		}
+		default: {
+			throw new RangeError(`Wrong number of arguments: ${args.length}`)
+		}
+	}
 }
 
 type Expand<T> = T extends Record<string, unknown> ? T extends infer O ? { [K in keyof O]: Expand<O[K]> } : never
