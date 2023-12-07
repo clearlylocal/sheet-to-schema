@@ -123,14 +123,35 @@ function getWorkbookData<T extends GenericSheetsConfig>(
 				}),
 			)
 
-			const headingMatchers = Object.values(schema).map((v) => v.match)
+			const headingInfo = Object.entries(schema).map(([key, val]) => ({ ...val, key }))
+			type HeadingInfo = typeof headingInfo[number]
+			// const headingMatchers = headingInfo.map((v) => v.match)
 
-			const headerRowIndex = rows.slice(minIndex, maxIndex).findIndex((row) => {
-				return headingMatchers.every((m) => row.map(String).some(m))
-			})
+			let headerRowIndex = -1
+			let foundLength = 0
+			let foundHeaders: string[] = []
+			for (const [idx, row] of rows.slice(minIndex, maxIndex).entries()) {
+				const found = headingInfo.filter((m) => row.map(String).find(m.match))
+
+				if (found.length > foundLength) {
+					foundLength = found.length
+					foundHeaders = found.map((x) => x.key)
+				}
+
+				if (found.length === headingInfo.length) {
+					headerRowIndex = idx
+					break
+				}
+			}
 
 			if (headerRowIndex === -1) {
-				throw new TypeError(`No matching header row for sheet ${k}`)
+				throw new TypeError(
+					`Headers ${
+						new Intl.ListFormat('en-US').format(
+							Object.keys(schema).filter((k) => !foundHeaders.includes(k)).map((x) => JSON.stringify(x)),
+						)
+					} missing for sheet ${JSON.stringify(k)}`,
+				)
 			}
 
 			const _headings = rows[headerRowIndex].map(String)
