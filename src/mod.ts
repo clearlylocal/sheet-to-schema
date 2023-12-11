@@ -214,6 +214,8 @@ function getWorkbookData<T extends GenericSheetsConfig>(
 	return { results: results as Expand<Output<T>['results']>, warnings }
 }
 
+const DEFAULT_READ_OPTS = { dense: true }
+
 export function sheetToSchema<T extends GenericSheetsConfig>(config: GenericWorkBookConfig<T>): (
 	xlsxBin: Uint8Array | ArrayBuffer,
 ) => Expand<Output<T>>
@@ -225,15 +227,15 @@ export function sheetToSchema<T extends GenericSheetsConfig>(
 export function sheetToSchema(...args: any[]) {
 	switch (args.length) {
 		case 1: {
-			const [config] = args
+			const [config] = args as [GenericWorkBookConfig<GenericSheetsConfig>]
 			return (xlsxBin: Uint8Array | ArrayBuffer) => {
-				const wb = XLSX.read(xlsxBin)
+				const wb = XLSX.read(xlsxBin, { ...DEFAULT_READ_OPTS, ...config.readOptions })
 				return getWorkbookData(wb, config)
 			}
 		}
 		case 2: {
-			const [xlsxBin, config] = args
-			const wb = XLSX.read(xlsxBin)
+			const [xlsxBin, config] = args as [Uint8Array | ArrayBuffer, GenericWorkBookConfig<GenericSheetsConfig>]
+			const wb = XLSX.read(xlsxBin, { ...DEFAULT_READ_OPTS, ...config.readOptions })
 			return getWorkbookData(wb, config)
 		}
 		default: {

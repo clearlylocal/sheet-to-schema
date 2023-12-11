@@ -1,7 +1,7 @@
 import { sheetToSchema } from '../src/mod.ts'
 import { xlsxDateTime } from '../src/dates.ts'
-import * as z from 'https://esm.sh/v131/zod@3.21.4'
 import { Temporal } from 'https://esm.sh/v131/@js-temporal/polyfill@0.4.4'
+import * as z from 'https://esm.sh/v131/zod@3.21.4'
 import { assertEquals, assertExists } from 'https://deno.land/std@0.207.0/assert/mod.ts'
 
 class EmailAddress extends String {}

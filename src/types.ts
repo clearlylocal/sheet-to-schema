@@ -1,3 +1,5 @@
+import type XLSX from 'https://raw.githubusercontent.com/clearlylocal/xlsx/9910080/xlsx.mjs'
+
 export type CellValue = string | number | boolean | undefined
 export type Row = CellValue[]
 
@@ -10,6 +12,7 @@ export type Options = {
 
 export type GenericWorkBookConfig<T extends GenericSheetsConfig> = {
 	options?: Partial<Options>
+	readOptions?: Partial<XLSX.ParsingOptions>
 	sheets: T
 }
 
