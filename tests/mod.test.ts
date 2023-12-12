@@ -1,6 +1,6 @@
 import { sheetToSchema } from '../src/mod.ts'
 import { xlsxDateTime } from '../src/dates.ts'
-import { Temporal } from 'https://esm.sh/v131/@js-temporal/polyfill@0.4.4'
+import 'https://esm.sh/v131/temporal-polyfill@0.1.1/dist/global.mjs'
 import * as z from 'https://esm.sh/v131/zod@3.21.4'
 import { assertEquals, assertExists } from 'https://deno.land/std@0.207.0/assert/mod.ts'
 

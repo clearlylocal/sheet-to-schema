@@ -1,4 +1,4 @@
-import { Temporal } from 'https://esm.sh/v131/@js-temporal/polyfill@0.4.4'
+import 'https://esm.sh/v131/temporal-polyfill@0.1.1/dist/global.mjs'
 import type { CellValue } from './types.ts'
 
 /**
